@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:theme = "@android:style/Theme.NoTitleBar"
+    tools:context="com.yus.taobaoui.MainActivity">
+
+    <!--底部按钮-->
+    <LinearLayout
+        android:id="@+id/ll_bottom3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#f5f5f5"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <com.yus.taobaoui.view.ButtomBtn
+            android:id="@+id/bomBtnHome4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </com.yus.taobaoui.view.ButtomBtn>
+
+
+
+        <com.yus.taobaoui.view.ButtomBtn
+            android:id="@+id/bomBtnAsk4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </com.yus.taobaoui.view.ButtomBtn>
+
+        <com.yus.taobaoui.view.ButtomBtn
+            android:id="@+id/bomBtnShopCar4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </com.yus.taobaoui.view.ButtomBtn>
+
+        <com.yus.taobaoui.view.ButtomBtn
+            android:id="@+id/bomBtnMy4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </com.yus.taobaoui.view.ButtomBtn>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_bottom3"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="有衣捐"
+            android:textColor="#FF5000"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F444" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:paddingBottom="5dp" >
+
+
+            <WebView
+                android:id="@+id/comeeonweal_webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+    <include
+        layout="@layout/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@id/ll_bottom3">
+    </include>
+</RelativeLayout>
