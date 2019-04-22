@@ -68,7 +68,7 @@ public class commonwealActivity extends AppCompatActivity {
         bomBtnAsk.setIvAndTv(R.drawable.ask,"有衣聊");
         bomBtnAsk.setTvColor(getResources().getColor(R.color.font33));
 
-        bomBtnShopCar.setIvAndTv(R.drawable.cart,"有衣捐");
+        bomBtnShopCar.setIvAndTv(R.drawable.cart,"有衣捐菜单");
         bomBtnShopCar.setTvColor(getResources().getColor(R.color.font33));
 
         bomBtnMy.setIvAndTv(R.drawable.my,"有衣搭");
